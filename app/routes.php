@@ -20,6 +20,7 @@ Route::get('json-test', function(){
 });
 
 Route::resource('actors','ActorsController');
+Route::resource('movies','MoviesController');
 
 App::missing(function($exception){
 	return View::make('main');

@@ -1,5 +1,5 @@
 <script>
-    var app = angular.module('store',['mainCtrl','actorService'],function($interpolateProvider) {
+    var app = angular.module('actors',['mainCtrl','actorService'],function($interpolateProvider) {
         $interpolateProvider.startSymbol('<%');
         $interpolateProvider.endSymbol('%>');
     });

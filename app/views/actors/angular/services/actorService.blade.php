@@ -14,7 +14,7 @@
                     });
                 },
                 destroy: function(id){
-                    return $http.delete('http://localhost:8080/Angular-Test/public/actors'+id);
+                    return $http.delete('http://localhost:8080/Angular-Test/public/actors/'+id);
                 }
             }
         });

@@ -5,7 +5,7 @@
     @include("actors.angular.app")
 @stop
 @section('content')
-    <div class="row" ng-app="store" ng-controller="mainController">
+    <div class="row" ng-app="actors" ng-controller="mainController">
         <form ng-submit="submitActor()"> <!-- ng-submit will disable the default form action and use our function -->
 
             <!-- AUTHOR -->
@@ -30,7 +30,7 @@
             <h3>Comment #<% actor.id %> <small>by <% actor.first_name %> </h3>
             <p><% actor.last_name %></p>
 
-            <p><a href="#" ng-click="deleteActor(actor.actor_id)" class="text-muted">Delete</a></p>
+            <p><a href="#" ng-click="deleteActor(actor.id)" class="text-muted">Delete</a></p>
         </div>
     </div>
 

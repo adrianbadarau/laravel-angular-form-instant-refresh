@@ -10,7 +10,7 @@ class ActorsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$actors = Actor::get();
+		$actors = Actor::all();
 		return Response::json($actors);
 	}
 
@@ -33,7 +33,7 @@ class ActorsController extends \BaseController {
 	 */
 	public function store()
 	{
-		Actor::create(['first_name'=>Input::get('first_name'), 'last_name'=>Input::get('last_name')]);
+		Actor::create(Input::all());
 		return Response::json(['success'=>true]);
 	}
 
