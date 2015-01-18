@@ -46,7 +46,7 @@ class ActorsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		return View::make("actors.index");
 	}
 
 	/**

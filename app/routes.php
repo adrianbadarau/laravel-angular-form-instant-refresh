@@ -13,8 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('main')
-		->with('actors', Actor::all());
+	return View::make('main');
 });
 Route::get('json-test', function(){
 	return Actor::first();

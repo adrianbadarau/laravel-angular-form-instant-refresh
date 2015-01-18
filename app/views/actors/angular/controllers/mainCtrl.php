@@ -1,6 +1,4 @@
-/**
- * Created by adrian on 17.01.2015.
- */
+<script>
 angular.module('mainCtrl',[])
 
 .controller('mainController', function($scope, $http, Actor){
@@ -33,3 +31,5 @@ angular.module('mainCtrl',[])
             });
         };
     });
+
+</script>
